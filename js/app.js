@@ -20,12 +20,18 @@ var RouteHandler = Router.RouteHandler;
 var LibraryApp = React.createClass({
     render: function () {
         return (
-            <div>
+            <div className="container">
                 <Header></Header>
-                <div>
-                    <BookList books={books}></BookList>
-                    <RouteHandler/>
+                <hr />
+                <div className="row">
+                    <div className="col-md-4">
+                        <BookList books={books}></BookList>
+                    </div>
+                    <div className="col-md-8">
+                        <RouteHandler/>
+                    </div>
                 </div>
+                <hr />
                 <Footer></Footer>
             </div>
         )

@@ -1,0 +1,21 @@
+{
+  "name": "library",
+  "version": "0.1.0",
+  "authors": [
+    "Niru Maheswaranathan <nirum@stanford.edu>"
+  ],
+  "description": "a sample library app using react",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2"
+  }
+}

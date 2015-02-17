@@ -21,7 +21,7 @@ module.exports = [{
     added: moment("2009-03-14").format()
 }, {
     id: 4,
-    title: 'The Scarlet Letteer',
+    title: 'The Scarlet Letter',
     author: 'Nathaniel Hawthorne',
     added: moment("2007-08-13").format()
 }, {

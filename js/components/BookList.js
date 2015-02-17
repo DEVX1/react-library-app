@@ -10,13 +10,13 @@ var BookList = React.createClass({
     render: function() {
         var items = this.props.books.map(function (book) {
             return (
-                <li><Link to="book" params={book}>{book.title}</Link> by {book.author}</li>
+                <li className="list-group-item"><Link to="book" params={book}>{book.title}</Link> by {book.author}</li>
             );
         });
         return (
             <div>
                 <p>welcome to your library</p>
-                <ul>
+                <ul className="list-group">
                     {items}
                 </ul>
             </div>
