@@ -3,22 +3,24 @@
  */
 
 var React = require('react');
+var Router = require('react-router');
 var moment = require('moment');
+var books = require('../data');
 
 var BookDetail = React.createClass({
+    mixins: [Router.State],
+
     render: function() {
-        var details = this.props.books.map(function (book) {
-            return (
-                <div>
-                    <h4>{book.title}</h4>
-                    <p>by {book.author}</p>
-                    <p>added on: {moment(book.added).format("dddd, MMMM Do YYYY")} </p>
-                </div>
-            );
+        var id = this.getParams().id;
+        var book = books.filter(function(b) {
+            return b.id == id;
         });
+
         return (
             <div>
-            {details}
+                <h4>{book[0].title}</h4>
+                <p>by {book[0].author}</p>
+                <p>added on: {moment(book[0].added).format("dddd, MMMM Do YYYY")} </p>
             </div>
         );
     }

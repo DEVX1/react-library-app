@@ -3,12 +3,13 @@
  */
 
 var React = require('react');
+var Link = require('react-router').Link;
 
 var Header = React.createClass({
     render: function() {
         return (
             <div>
-                <h1>Library</h1>
+                <h1><Link to="/">Library</Link></h1>
             </div>
         )
     }

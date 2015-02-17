@@ -3,12 +3,14 @@
  */
 
 var React = require('react');
+var Router = require('react-router');
+var Link = Router.Link;
 
 var BookList = React.createClass({
     render: function() {
         var items = this.props.books.map(function (book) {
             return (
-                <li>{book.title} by {book.author}</li>
+                <li><Link to="book" params={book}>{book.title}</Link> by {book.author}</li>
             );
         });
         return (
