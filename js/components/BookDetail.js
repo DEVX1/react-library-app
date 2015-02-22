@@ -21,6 +21,7 @@ var BookDetail = React.createClass({
                 <h4>{book[0].title}</h4>
                 <p>by {book[0].author}</p>
                 <p>added on: {moment(book[0].added).format("dddd, MMMM Do YYYY")} </p>
+                <p>{book[0].stars} stars</p>
             </div>
         );
     }

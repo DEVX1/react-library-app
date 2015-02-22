@@ -9,11 +9,9 @@ var BookList = require('./components/BookList');
 var BookDetail = require('./components/BookDetail');
 var LibraryStats = require('./components/LibraryStats');
 var Footer = require('./components/Footer');
-var moment = require('moment');
 var books = require('./data');
 
 var DefaultRoute = Router.DefaultRoute;
-var Link = Router.Link;
 var Route = Router.Route;
 var RouteHandler = Router.RouteHandler;
 
